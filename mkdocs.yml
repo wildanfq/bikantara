@@ -1,0 +1,12 @@
+site_name: Wildan FQ
+
+theme:
+  name: readthedocs
+  highlightjs: true
+  logo: img/logo.png
+
+extra_css:
+  - css/custom.css
+
+nav:
+  - index.md
