@@ -1,6 +1,4 @@
-*Panduan belajar membuat CPU berbasis RISC‑V*
-
----
+**Panduan belajar membuat CPU berbasis RISC‑V**
 
 **1. Logika dan Bilangan**  
 CPU hanya mengenali dua keadaan: 0 dan 1. Mulailah dengan sistem bilangan biner dan heksadesimal, konversi antar basis, serta representasi bilangan bertanda (two’s complement) dan tidak bertanda. Kuasai aljabar Boolean (AND, OR, NOT, XOR) dan tabel kebenaran; dari sini semua gerbang logika dirancang. Latih menyusun ekspresi Boolean dan menyederhanakannya dengan hukum De Morgan. Pahami bahwa kelak penjumlahan, pengurangan, perbandingan, dan pergeseran di dalam CPU hanyalah rangkaian operasi logika ini. Tidak dibutuhkan alat apa pun—cukup kertas, pensil, dan pikiran yang disiplin.
