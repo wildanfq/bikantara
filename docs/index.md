@@ -4,8 +4,6 @@ Roadmap ini dirancang sebagai kurikulum otodidak yang komprehensif untuk memandu
 
 Roadmap ini terbagi menjadi dua bagian besar. Bagian pertama adalah Fondasi Sains Murni yang bersifat opsional—Anda dapat melewatinya jika sudah memahami dasar-dasar fisika dan kimia semikonduktor, namun sangat disarankan bagi pemula absolut karena memberikan pemahaman fundamental tentang mengapa dan bagaimana komponen elektronik bekerja. Bagian kedua adalah Jalur Utama Perancangan CPU yang merupakan inti dari roadmap ini, dimulai dari elektronika dasar hingga chip jadi, dengan setiap tahap dibangun di atas pemahaman tahap sebelumnya.
 
----
-
 ## (OPSIONAL)
 
 Bagian ini memberikan pemahaman paling dasar tentang angka, listrik, bahan semikonduktor, dan cara kerja transistor dari sudut pandang ilmu pengetahuan murni. Meskipun bersifat opsional, menguasai bagian ini akan memberikan fondasi yang sangat kokoh dan solid, memungkinkan Anda memahami secara mendalam mengapa transistor berperilaku seperti yang mereka lakukan dan bagaimana prinsip-prinsip fisika mendasari setiap operasi yang terjadi di dalam prosesor. Bagi mereka yang sudah memiliki latar belakang di bidang fisika, kimia, atau teknik elektro, bagian ini dapat dilewati untuk langsung masuk ke perancangan CPU. Namun bagi pemula, bagian ini adalah investasi waktu yang sangat berharga karena akan membuat perjalanan belajar Anda jauh lebih bermakna dan tidak sekadar menghafal prosedur.
@@ -27,8 +25,6 @@ Pemahaman tentang elektron dan kelistrikan akan semakin diperdalam dengan penget
 Bagian ini mengintegrasikan teori fisika dan kimia yang telah Anda pelajari untuk menjelaskan secara lengkap bagaimana perangkat semikonduktor bekerja. Anda akan mempelajari teori pita energi yang menjelaskan bahwa elektron dalam material padat hanya dapat memiliki energi pada pita-pita tertentu, dengan pita valensi yang terisi penuh oleh elektron dan pita konduksi yang kosong atau sebagian terisi—celah di antara keduanya disebut celah pita atau bandgap yang menentukan apakah material bersifat konduktor, semikonduktor, atau isolator. Mekanisme aliran muatan dijelaskan melalui arus drift yang disebabkan oleh medan listrik dan arus difusi yang disebabkan oleh perbedaan konsentrasi muatan. Sambungan PN dianalisis secara mendalam sebagai dasar dioda, mencakup karakteristik arus-tegangan, tegangan breakdown, dan kapasitansi sambungan. Materi kemudian berlanjut ke struktur MOSFET yang merupakan singkatan dari Metal-Oxide-Semiconductor Field-Effect Transistor, di mana Anda akan memahami bagaimana tegangan pada gerbang (gate) mengontrol aliran arus antara sumber (source) dan saluran (drain) melalui efek medan listrik. Prinsip CMOS yang merupakan singkatan dari Complementary Metal-Oxide-Semiconductor diperkenalkan sebagai teknologi yang menggunakan pasangan transistor PMOS dan NMOS secara komplementer untuk membentuk gerbang pembalik atau inverter—sel fundamental dari semua prosesor modern. Anda akan memahami karakteristik kebisingan yang menentukan ketahanan sinyal terhadap derau dan karakteristik daya yang mencakup konsumsi daya statis dan dinamis.
 
 Setelah melalui keempat tahap fondasi sains murni ini, Anda memiliki pemahaman ilmiah yang kokoh tentang mengapa transistor berperilaku seperti yang mereka lakukan dan bagaimana prinsip-prinsip fisika dan kimia mendasari setiap operasi yang terjadi di dalam prosesor. Pengetahuan ini akan sangat berharga saat Anda melanjutkan ke jalur utama perancangan CPU, karena Anda tidak hanya akan tahu cara merancang rangkaian tetapi juga mengerti mengapa rangkaian tersebut bekerja.
-
----
 
 ##  (WAJIB)
 
@@ -77,8 +73,6 @@ Tahap puncak dari seluruh perjalanan ini adalah mengubah desain Anda menjadi chi
 ### 11. Pemrograman Bare-Metal dan Debugging
 
 Untuk menguji chip nyata yang telah Anda terima, Anda perlu menulis program uji yang berjalan langsung di atas perangkat keras tanpa sistem operasi, yang disebut program bare-metal. Program ini ditulis dalam Assembly RISC-V untuk kontrol yang sangat presisi atas setiap instruksi yang dijalankan, dan dalam bahasa C untuk program yang lebih kompleks, lalu dikompilasi menggunakan RISC-V GNU Toolchain yang mencakup GCC sebagai compiler, Binutils untuk assembler dan linker, dan library pendukung lainnya. Biner hasil kompilasi dimuat ke memori CPU melalui antarmuka SPI, UART, atau JTAG yang merupakan standar industri untuk debugging dan pemrograman perangkat keras. OpenOCD atau Open On-Chip Debugger bertindak sebagai jembatan debug yang menghubungkan komputer Anda dengan chip melalui JTAG, dan GDB atau GNU Debugger digunakan untuk menelusuri instruksi satu per satu, memeriksa isi register, mengamati perilaku sinyal kendali, dan memastikan bahwa semua unit bekerja sempurna. Pada titik ini, seluruh rantai desain—dari elektron yang mengalir di dalam transistor, melalui perangkat lunak yang Anda tulis, hingga instruksi yang dieksekusi di atas silikon—telah terverifikasi dalam wujud chip nyata. Anda telah menyelesaikan perjalanan dari nol absolut menjadi seorang desainer CPU yang mampu menciptakan prosesor RISC-V 64-bit yang berfungsi.
-
----
 
 ## PENUTUP
 
