@@ -1,4 +1,4 @@
-site_name: Wildan FQ
+site_name: Docs
 
 theme:
   name: readthedocs
@@ -10,3 +10,4 @@ extra_css:
 
 nav:
   - index.md
+  - 1.md
