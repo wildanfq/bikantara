@@ -7,7 +7,3 @@ theme:
 
 extra_css:
   - css/custom.css
-
-nav:
-  - index.md
-  - 1.md
